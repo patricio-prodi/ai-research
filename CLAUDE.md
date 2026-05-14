@@ -109,22 +109,24 @@ last_updated: YYYY-MM-DD
 
 When the user says "ingest or process [article]":
 
-1. Read the article fully.
-2. Discuss key takeaways with the user if they want (optional).
-3. Create `wiki/sources/{slug}.md` with a structured summary: overview, key claims, evidence/data, implications, quotes.
-4. Update `wiki/index.md`: add the new source to the Sources section.
-5. For each key concept in the article:
-   - If a concept page exists: update it with new evidence, quotes, or contradictions.
-   - If it doesn't exist: create `wiki/concepts/{slug}.md`.
-6. For each key entity (person, org, company) in the article:
-   - If an entity page exists: add new info, update source list.
-   - If it doesn't exist: create `wiki/entities/{slug}.md`.
-7. If the article contributes to a topic synthesis: update or create the relevant `wiki/topics/` page.
-8. Mark the raw file as ingested by running:
+1. **Guard check — run first, before reading anything:**
    ```
    python3 scripts/mark_ingested.py "raw/filename.md"
    ```
-   This is the **only** allowed write operation on the `raw/` folder. Do not edit raw files directly.
+   - If the script outputs `Already ingested: ...` → **stop immediately**. Inform the user: "This file has already been ingested (`tag: ingested` is set). No changes were made. Let me know if you want to re-process it anyway."
+   - If the script outputs `Marked as ingested: ...` → continue with the steps below.
+   - This is the **only** allowed write operation on `raw/`. Do not edit raw files directly.
+2. Read the article fully.
+3. Discuss key takeaways with the user if they want (optional).
+4. Create `wiki/sources/{slug}.md` with a structured summary: overview, key claims, evidence/data, implications, quotes.
+5. Update `wiki/index.md`: add the new source to the Sources section.
+6. For each key concept in the article:
+   - If a concept page exists: update it with new evidence, quotes, or contradictions.
+   - If it doesn't exist: create `wiki/concepts/{slug}.md`.
+7. For each key entity (person, org, company) in the article:
+   - If an entity page exists: add new info, update source list.
+   - If it doesn't exist: create `wiki/entities/{slug}.md`.
+8. If the article contributes to a topic synthesis: update or create the relevant `wiki/topics/` page.
 9. Append an entry to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] ingest | Article Title
