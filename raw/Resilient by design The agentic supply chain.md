@@ -6,6 +6,7 @@ published: 2026-03-30
 created: 2026-04-16
 description: "Amid rising supply chain complexity globally, agentic AI helps manufacturers manage risk, improve resilience, and unlock new value"
 tags:
+  - ingested
 ---
 
 ## As global supply chain complexity grows, agentic AI may offer manufacturers transformative ways to manage risk and capture new value

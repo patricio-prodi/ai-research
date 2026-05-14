@@ -7,7 +7,7 @@ published: 2026-04-12
 created: 2026-04-15
 description: "Andrej Karpathy’s LLM Knowledge Bases explained What is LLM Knowledge Bases by Andrej Karpathy? If you follow the world of Artificial Intelligence, you have likely heard of Andrej Karpathy. He is …"
 tags:
-  - "clippings"
+  - ingested
 ---
 ## What is LLM Knowledge Bases by Andrej Karpathy?
 

@@ -7,7 +7,7 @@ published: 2026-03-04
 created: 2026-04-21
 description: "We evaluated seven agent frameworks and two SDKs across developer experience, agent capabilities, context and memory, deployment and hosting, and security and compliance. Here is what we found."
 tags:
-  - "raw"
+  - ingested
 ---
 AI & MCP
 

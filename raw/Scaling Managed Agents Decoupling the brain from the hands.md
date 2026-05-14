@@ -6,7 +6,7 @@ published:
 created: 2026-04-16
 description: "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
 tags:
-  - "raw"
+  - inbox
 ---
 *Get started with Claude Managed Agents by following our [docs](https://platform.claude.com/docs/en/managed-agents/overview).*  
   

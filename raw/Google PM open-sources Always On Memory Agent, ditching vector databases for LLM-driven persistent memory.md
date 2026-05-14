@@ -7,7 +7,7 @@ published: 2026-03-06
 created: 2026-04-23
 description: ". Enterprise AI teams are moving beyond single-turn assistants and into systems expected to remember preferences, preserve project context and operate across longer horizons."
 tags:
-  - "raw"
+  - inbox
 ---
 
 

@@ -7,7 +7,7 @@ published: 2026-04-15
 created: 2026-04-16
 description: "In \"Thin Harness, Fat Skills\", I introduced five definitions for building agent systems that actually work. Skills got all the attention. Pe..."
 tags:
-  - "raw"
+  - inbox
 ---
 ![Image](https://pbs.twimg.com/media/HF9v5r1bEAEhngG?format=jpg&name=large)
 

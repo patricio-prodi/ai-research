@@ -9,7 +9,7 @@ published: 2024-07-24
 created: 2026-04-16
 description: "By moving from information to action—think virtual coworkers able to complete complex workflows—AI agents promise a new wave of productivity."
 tags:
-  - "raw"
+  - inbox
 ---
 By moving from information to action—think virtual coworkers able to complete complex workflows—the technology promises a new wave of productivity and innovation.
 

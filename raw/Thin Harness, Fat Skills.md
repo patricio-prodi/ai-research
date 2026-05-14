@@ -7,7 +7,7 @@ published: 2026-04-11
 created: 2026-04-16
 description: "Steve Yegge says people using AI coding agents are \"10x to 100x as productive as engineers using Cursor and chat today, and roughly 1000x as..."
 tags:
-  - "raw"
+  - ingested
 ---
 Steve Yegge says people using AI coding agents are "10x to 100x as productive as engineers using Cursor and chat today, and roughly 1000x as productive as Googlers were back in 2005."
 

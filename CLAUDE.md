@@ -107,7 +107,7 @@ last_updated: YYYY-MM-DD
 
 ### INGEST (adding a new source)
 
-When the user says "ingest [article]" or drops a new file in `articles/`:
+When the user says "ingest or process [article]":
 
 1. Read the article fully.
 2. Discuss key takeaways with the user if they want (optional).
@@ -120,7 +120,12 @@ When the user says "ingest [article]" or drops a new file in `articles/`:
    - If an entity page exists: add new info, update source list.
    - If it doesn't exist: create `wiki/entities/{slug}.md`.
 7. If the article contributes to a topic synthesis: update or create the relevant `wiki/topics/` page.
-8. Append an entry to `wiki/log.md`:
+8. Mark the raw file as ingested by running:
+   ```
+   python3 scripts/mark_ingested.py "raw/filename.md"
+   ```
+   This is the **only** allowed write operation on the `raw/` folder. Do not edit raw files directly.
+9. Append an entry to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] ingest | Article Title
    - Source page: [[sources/slug]]

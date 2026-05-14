@@ -6,7 +6,7 @@ published:
 created: 2026-04-22
 description: "A simple, open format for giving agents new capabilities and expertise."
 tags:
-  - "raw"
+  - inbox
 ---
 Agent Skills are folders of instructions, scripts, and resources that agents can discover and use to do things more accurately and efficiently.
 
