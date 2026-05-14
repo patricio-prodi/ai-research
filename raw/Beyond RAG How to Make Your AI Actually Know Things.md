@@ -7,7 +7,7 @@ published: 2026-04-24
 created: 2026-04-24
 description: "A practical architecture for building AI that reasons from structured knowledge, not document chunks"
 tags:
-  - inbox
+  - ingested
 ---
 Everyone reaches for RAG. You have documents, data feeds, or internal content you want an AI to reason about, so you chunk everything up, generate embeddings, throw it in a vector database, and call it a day. It works. Kind of.
 

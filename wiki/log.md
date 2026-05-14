@@ -48,6 +48,12 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Pages created: [[concepts/yc-application]], [[concepts/founder-traction]], [[entities/hendrick]], [[entities/conveo]]
 - Pages updated: [[entities/y-combinator]] (added YC application section), [[wiki/index.md]]
 
+## [2026-05-14] ingest | Beyond RAG: How to Make Your AI Actually Know Things
+
+- Source page: [[sources/gaiji-beyond-rag]]
+- Pages created: [[sources/gaiji-beyond-rag]], [[entities/lassaad-gaiji]], [[concepts/knowledge-ontology]]
+- Pages updated: [[concepts/rag-vs-wiki]] (third approach: structured KB + Gaiji quote), [[concepts/mcp-server]] (MCP toolbox dual-route pattern), [[wiki/index.md]]
+
 ## [2026-05-14] ingest | LLM Wiki (Karpathy's gist — primary source)
 
 - Source page: [[sources/karpathy-llm-wiki-gist]]

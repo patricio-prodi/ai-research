@@ -2,8 +2,8 @@
 type: concept
 title: "RAG vs. LLM Wiki"
 aliases: [retrieval-augmented generation, rag, vector search, embedding search]
-sources: [karpathy-llm-knowledge-bases, karpathy-llm-wiki-gist]
-related_concepts: [llm-wiki]
+sources: [karpathy-llm-knowledge-bases, karpathy-llm-wiki-gist, gaiji-beyond-rag]
+related_concepts: [llm-wiki, knowledge-ontology]
 related_entities: []
 last_updated: 2026-05-14
 ---
@@ -71,6 +71,17 @@ At query time:
 
 At ~100 articles (~400,000 words), a well-organized wiki with a good index file allows the LLM to navigate without any RAG infrastructure. The index is enough. RAG adds complexity without proportional benefit at that scale.
 
+## A Third Approach: Structured Knowledge Extraction
+
+[[entities/lassaad-gaiji|Lassaad Gaiji]] in [[sources/gaiji-beyond-rag|"Beyond RAG"]] (2026-04-24) proposes a middle path: a **dual-pipeline architecture** that keeps RAG for Q&A while running a parallel extraction pipeline that produces a structured, versioned knowledge base. See [[concepts/knowledge-ontology]] for the full pattern.
+
+The key insight: RAG fails not at retrieval but at *reasoning*. Chunks are context-free fragments — a rule may span two chunks and share vector space with an unrelated paragraph. An AI that needs to *apply* rules consistently (compliance, ops, legal) needs a knowledge base, not a search index.
+
+> "If your users are asking questions *about* your data, RAG is great. If your AI needs to *act on* that knowledge, reliably, repeatedly, with human oversight, you need a knowledge base." — [[entities/lassaad-gaiji|Gaiji]]
+
+This approach shares the "compile at ingest time" philosophy of the [[concepts/llm-wiki|LLM Wiki]], but implemented as schema-enforced database rows with an explicit human approval gate between extraction and synthesis.
+
 ## Related pages
 
 - [[concepts/llm-wiki]] — the full LLM Wiki pattern
+- [[concepts/knowledge-ontology]] — Gaiji's database-driven extraction pipeline

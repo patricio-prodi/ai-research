@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Last updated: 2026-05-14 — 7 sources, 42 pages_
+_Last updated: 2026-05-14 — 8 sources, 46 pages_
 
 > The index is the LLM's navigation map. Read this first when answering queries or ingesting new sources.
 
@@ -17,6 +17,7 @@ _Last updated: 2026-05-14 — 7 sources, 42 pages_
 | [garrytan-thin-harness-fat-skills](sources/garrytan-thin-harness-fat-skills.md) | Thin Harness, Fat Skills | 2026-04-11 | agent-architecture, skill-files, claude-code, productivity, llm-workflow |
 | [speakeasy-agent-framework-comparison](sources/speakeasy-agent-framework-comparison.md) | Choosing an agent framework: LangChain vs LangGraph vs CrewAI vs PydanticAI vs Mastra vs Vercel AI SDK | 2026-03-04 | agent-frameworks, langchain, langgraph, crewai, pydanticai, mastra, vercel-ai-sdk, mcp, agents |
 | [hendrick-yc-application-tips](sources/hendrick-yc-application-tips.md) | Tips from Hendrick: How to Nail Your YC Application | 2026-05-12 | yc, startups, fundraising, founder-advice, applications |
+| [gaiji-beyond-rag](sources/gaiji-beyond-rag.md) | Beyond RAG: How to Make Your AI Actually Know Things | 2026-04-24 | rag, knowledge-extraction, agent-architecture, mcp, database |
 
 ---
 
@@ -38,6 +39,7 @@ _Last updated: 2026-05-14 — 7 sources, 42 pages_
 | [durable-execution](concepts/durable-execution.md) | Durable Execution | Persisting state across server restarts or crashes, enabling resumable workflows |
 | [yc-application](concepts/yc-application.md) | YC Application Strategy | Ten-lever playbook for a successful Y Combinator application, emphasizing clarity, velocity, and team cohesion |
 | [founder-traction](concepts/founder-traction.md) | Founder Traction | Evidence that a market is pulling a product toward it; includes users, waitlists, LOIs, or early revenue |
+| [knowledge-ontology](concepts/knowledge-ontology.md) | Knowledge Ontology (Structured Extraction Pipeline) | Multi-agent pipeline that extracts rules/policies from documents into a structured, versioned database KB |
 
 ---
 
@@ -63,6 +65,7 @@ _Last updated: 2026-05-14 — 7 sources, 42 pages_
 | [openai-agents-sdk](entities/openai-agents-sdk.md) | OpenAI Agents SDK | product | speakeasy-agent-framework-comparison |
 | [hendrick](entities/hendrick.md) | Hendrick | person | hendrick-yc-application-tips |
 | [conveo](entities/conveo.md) | Conveo | company | hendrick-yc-application-tips |
+| [lassaad-gaiji](entities/lassaad-gaiji.md) | Lassaad Gaiji | person | gaiji-beyond-rag |
 
 ---
 
