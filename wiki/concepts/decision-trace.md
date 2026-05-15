@@ -10,7 +10,7 @@ last_updated: 2026-05-15
 
 # Decision Trace
 
-A **structured, replayable record of how context turned into action on a single occasion**: what inputs were gathered across systems, what policy was evaluated, what exception route was invoked, who approved, and what state was written. Introduced by Foundation Capital in [[sources/foundation-capital-context-graphs|"AI’s trillion-dollar opportunity: Context graphs"]].
+A **structured, re-playable record of how context turned into action on a single occasion**: what inputs were gathered across systems, what policy was evaluated, what exception route was invoked, who approved, and what state was written. Introduced by Foundation Capital in [[sources/foundation-capital-context-graphs|"AI’s trillion-dollar opportunity: Context graphs"]].
 
 Decision traces are the **unit**; aggregated across entities and time, they form a [[concepts/context-graph|context graph]].
 
