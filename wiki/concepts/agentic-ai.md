@@ -2,10 +2,10 @@
 type: concept
 title: "Agentic AI"
 aliases: [ai agents, autonomous agents, agentic systems]
-sources: [agentic-supply-chain-deloitte, ai-2027, garrytan-thin-harness-fat-skills]
-related_concepts: [llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic]
+sources: [agentic-supply-chain-deloitte, ai-2027, garrytan-thin-harness-fat-skills, foundation-capital-context-graphs]
+related_concepts: [llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic, context-graph, decision-trace, systems-of-agents, systems-of-record]
 related_entities: [openai, anthropic, garry-tan]
-last_updated: 2026-04-16
+last_updated: 2026-05-15
 ---
 
 # Agentic AI
@@ -85,11 +85,23 @@ From [[sources/garrytan-thin-harness-fat-skills|Garry Tan's "Thin Harness, Fat S
 
 The [[entities/anthropic|Anthropic]] Claude Code architecture (reviewed after accidental npm publish in March 2026) implements these principles: live repo context, prompt caching, purpose-built tools, context bloat minimization, structured session memory, parallel sub-agents.
 
+## Commercial implication: the context graph as moat (Foundation Capital, 2025)
+
+From [[sources/foundation-capital-context-graphs|Foundation Capital]]: the most valuable property of agentic AI in the enterprise is not the labor automation but the *byproduct*. Because an agent must — for its own correctness — gather inputs across systems, evaluate policy, resolve conflicts, and route approvals, the reasoning that previously lived in people’s heads becomes durable data **as a side effect of using the agent**.
+
+The orchestration layer of an agentic system therefore sits in a privileged position: it captures **[[concepts/decision-trace|decision traces]]** at commit time. Aggregated over time, those traces form a **[[concepts/context-graph|context graph]]** — a queryable record of *why* the business did what it did.
+
+Foundation Capital argues this creates a new commercial category — **[[concepts/systems-of-agents|systems of agents]]** — that displaces (or complements) traditional [[concepts/systems-of-record|systems of record]]. Incumbents (Salesforce, Snowflake, Databricks) are structurally blocked from capturing the same asset because they sit outside the execution path.
+
+This reframes the business case for agentic AI: not just cost reduction via automation, but **capture of a previously uncaptured category of business truth**.
+
 ## Related pages
 
 - [[concepts/llm-wiki]] — a specific agentic AI application (LLM as wiki maintainer)
 - [[concepts/agi-timelines]] — how current agentic AI relates to AGI forecasts
 - [[concepts/thin-harness-fat-skills]] — the architectural design framework
+- [[concepts/context-graph]], [[concepts/decision-trace]], [[concepts/systems-of-agents]], [[concepts/systems-of-record]] — the commercial/structural framing
 - [[topics/agentic-systems]] — synthesis across agentic AI applications
 - [[entities/openai]], [[entities/anthropic]] — labs driving agentic AI development
 - [[entities/garry-tan]] — architect of the thin harness framework
+- Foundation Capital — VC thesis on context graphs (no dedicated entity page)

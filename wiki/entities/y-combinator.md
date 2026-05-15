@@ -23,13 +23,12 @@ Startup accelerator based in San Francisco. One of the most influential early-st
 
 ## YC application (from Hendrick / Conveo)
 
-- **[[sources/hendrick-yc-application-tips]]**: Practitioner advice on the YC application process from [[entities/hendrick|Hendrick]] at [[entities/conveo|Conveo]]. Key themes: invest in teams not ideas, reward velocity over planning, penalize jargon and evasion. See [[concepts/yc-application]] for the full playbook.
+- **[[sources/hendrick-yc-application-tips]]**: Practitioner advice on the YC application process from Hendrick at Conveo. Key themes: invest in teams not ideas, reward velocity over planning, penalize jargon and evasion. See [[concepts/yc-application]] for the full playbook.
 
 ## Related pages
 
 - [[entities/garry-tan]]
-- [[entities/hendrick]]
-- [[entities/conveo]]
+- Hendrick, Conveo — referenced via [[sources/hendrick-yc-application-tips]] (no dedicated entity pages)
 - [[concepts/thin-harness-fat-skills]]
 - [[concepts/yc-application]]
 - [[sources/garrytan-thin-harness-fat-skills]]
