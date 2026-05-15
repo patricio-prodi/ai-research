@@ -7,7 +7,7 @@ published: 2026-03-17
 created: 2026-04-21
 description: "Agentic AI Series Deep Dive SKILL.md (Part 1/2) Lately I have been able to do most of my work with not writing a single line of code, but defining the SKILL.md This blog will be a 2-part series; in …"
 tags:
-  - inbox
+  - ingested
 ---
 This blog will be a 2-part series; in this first part, I am going to walk through the concepts and the architecture of SKILL.md and some internal workings of how agents use SKILL.md to perform complicated tasks. In the second part of this series, I will be walking through the process of building a SKILL.md
 

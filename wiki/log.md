@@ -62,6 +62,12 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Pages updated: [[concepts/llm-wiki]] (application domains, schema layer, CLI tools/qmd, tips and tricks, Memex quote), [[concepts/rag-vs-wiki]] (primary source citation, Karpathy quote, named RAG examples), [[entities/andrej-karpathy]] (primary vs. secondhand source distinction, new quote), [[wiki/index.md]]
 - Note: this is Karpathy's own gist — the canonical first-person description of the pattern. Supersedes [[llm-knowledge-bases-explained]] as authoritative reference but both are retained.
 
+## [2026-05-15] ingest | Deep Dive SKILL.md (Part 1/2)
+
+- Source page: [[sources/vijaykumar-skill-md-deep-dive]]
+- Pages created: [[sources/vijaykumar-skill-md-deep-dive]], [[concepts/progressive-disclosure]], [[entities/ab-vijay-kumar]]
+- Pages updated: [[concepts/skill-files]] (formal spec, lifecycle phases, security, versioning, testing, comparison table; second source added), [[wiki/index.md]] (counts, all tables, coverage map)
+
 ## [2026-05-15] ingest | AI's trillion-dollar opportunity: Context graphs
 
 - Source page: [[sources/foundation-capital-context-graphs]]
