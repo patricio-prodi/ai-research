@@ -1,9 +1,9 @@
 ---
 type: topic
 title: "Agentic Systems: Applications and Implications"
-sources: [agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, garrytan-thin-harness-fat-skills]
-key_concepts: [agentic-ai, llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic, diarization]
-last_updated: 2026-04-16
+sources: [agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, garrytan-thin-harness-fat-skills, foundation-capital-context-graphs]
+key_concepts: [agentic-ai, llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic, diarization, context-graph, decision-trace, systems-of-agents, systems-of-record]
+last_updated: 2026-05-15
 ---
 
 # Agentic Systems: Applications and Implications
@@ -46,6 +46,22 @@ From [[sources/speakeasy-agent-framework-comparison]]: The software ecosystem fo
 
 The selection of a framework requires matching the organization's technical language (Python vs. TypeScript) and the orchestration complexity of the agents being built.
 
+### 5. Commercial: Systems of Agents and the Context Graph
+
+From [[sources/foundation-capital-context-graphs]]: Foundation Capital argues that the most valuable byproduct of agentic AI in the enterprise is not the labor automation but the **[[concepts/context-graph|context graph]]** — a queryable record of [[concepts/decision-trace|decision traces]] (inputs, policies, exceptions, approvers, rationale) accumulated by agents sitting in the orchestration path at commit time.
+
+This reframes the commercial category. Where [[concepts/systems-of-record|systems of record]] (Salesforce, Workday, SAP) own canonical *objects*, **[[concepts/systems-of-agents|systems of agents]]** own canonical *decisions*. The article identifies three strategic paths:
+
+| Path | Strategy | Named example |
+|---|---|---|
+| 1. Replace SoR outright | New AI-native platform at transition moment | Regie (vs. Outreach/Salesloft) |
+| 2. Replace a module | Own the decision sub-workflow, sync state back | Maximor (finance/reconciliation, ERP stays as ledger) |
+| 3. New SoR for decisions | Persist decision lineage; graph becomes the artifact | PlayerZero (production engineering glue function) |
+
+Adjacent infrastructure category: **agent observability** (Arize) — "Datadog for agent decision quality."
+
+The structural argument: incumbents are blocked. Salesforce-style operational SoRs are siloed and store current state, not state-at-decision-time. Snowflake / Databricks sit in the read path post-ETL; by the time data lands, decision context is gone. **Only the orchestration layer can capture decision traces** at commit time, and incumbents are not in it.
+
 ## Common structural patterns
 
 Both applications share the same underlying architecture:
@@ -83,6 +99,8 @@ The question isn't whether to use agentic AI, but how to redesign workflows for 
 - What governance frameworks work for enterprise agentic systems when guardrails fail?
 - How does the human role shift as agent autonomy increases toward AGI-level capability?
 - Is there an optimal organizational structure for human-agent teams?
+- Will [[concepts/systems-of-agents|systems of agents]] startups remain independent or be acquired/commoditized by incumbents trying to retrofit [[concepts/context-graph|context graphs]]?
+- Is "decision lineage" a category enterprises will pay for as a line item, or only as a side effect of buying agent automation?
 
 ## Related pages
 
@@ -93,7 +111,9 @@ The question isn't whether to use agentic AI, but how to redesign workflows for 
 - [[concepts/diarization]]
 - [[concepts/llm-wiki]]
 - [[concepts/agi-timelines]]
+- [[concepts/context-graph]], [[concepts/decision-trace]], [[concepts/systems-of-agents]], [[concepts/systems-of-record]]
 - [[sources/agentic-supply-chain-deloitte]]
 - [[llm-knowledge-bases-explained]]
 - [[sources/garrytan-thin-harness-fat-skills]]
+- [[sources/foundation-capital-context-graphs]]
 - [[topics/ai-forecasting]]

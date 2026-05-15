@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Last updated: 2026-05-14 — 8 sources, 46 pages_
+_Last updated: 2026-05-15 — 9 sources, 49 pages_
 
 > The index is the LLM's navigation map. Read this first when answering queries or ingesting new sources.
 
@@ -18,6 +18,7 @@ _Last updated: 2026-05-14 — 8 sources, 46 pages_
 | [speakeasy-agent-framework-comparison](sources/speakeasy-agent-framework-comparison.md) | Choosing an agent framework: LangChain vs LangGraph vs CrewAI vs PydanticAI vs Mastra vs Vercel AI SDK | 2026-03-04 | agent-frameworks, langchain, langgraph, crewai, pydanticai, mastra, vercel-ai-sdk, mcp, agents |
 | [hendrick-yc-application-tips](sources/hendrick-yc-application-tips.md) | Tips from Hendrick: How to Nail Your YC Application | 2026-05-12 | yc, startups, fundraising, founder-advice, applications |
 | [gaiji-beyond-rag](sources/gaiji-beyond-rag.md) | Beyond RAG: How to Make Your AI Actually Know Things | 2026-04-24 | rag, knowledge-extraction, agent-architecture, mcp, database |
+| [foundation-capital-context-graphs](sources/foundation-capital-context-graphs.md) | AI's trillion-dollar opportunity: Context graphs | 2025-12-22 | enterprise-ai, systems-of-record, context-graph, agentic-ai, vc-thesis, decision-trace |
 
 ---
 
@@ -40,6 +41,10 @@ _Last updated: 2026-05-14 — 8 sources, 46 pages_
 | [yc-application](concepts/yc-application.md) | YC Application Strategy | Ten-lever playbook for a successful Y Combinator application, emphasizing clarity, velocity, and team cohesion |
 | [founder-traction](concepts/founder-traction.md) | Founder Traction | Evidence that a market is pulling a product toward it; includes users, waitlists, LOIs, or early revenue |
 | [knowledge-ontology](concepts/knowledge-ontology.md) | Knowledge Ontology (Structured Extraction Pipeline) | Multi-agent pipeline that extracts rules/policies from documents into a structured, versioned database KB |
+| [context-graph](concepts/context-graph.md) | Context Graph | Living record of decision traces stitched across entities and time so precedent becomes searchable; the proposed enterprise moat for systems-of-agents |
+| [decision-trace](concepts/decision-trace.md) | Decision Trace | Structured record of how context turned into action on a single occasion: inputs gathered, policy evaluated, exceptions, approvers, rationale, state written |
+| [systems-of-record](concepts/systems-of-record.md) | Systems of Record | Enterprise software pattern (Salesforce, Workday, SAP) that owns canonical object data; debated under the agent transition |
+| [systems-of-agents](concepts/systems-of-agents.md) | Systems of Agents | Proposed new enterprise category: platforms that sit in the orchestration path, persist decision traces, and accumulate context graphs |
 
 ---
 
@@ -63,8 +68,6 @@ _Last updated: 2026-05-14 — 8 sources, 46 pages_
 | [vellum](entities/vellum.md) | Vellum | product | speakeasy-agent-framework-comparison |
 | [gram](entities/gram.md) | Gram | product | speakeasy-agent-framework-comparison |
 | [openai-agents-sdk](entities/openai-agents-sdk.md) | OpenAI Agents SDK | product | speakeasy-agent-framework-comparison |
-| [hendrick](entities/hendrick.md) | Hendrick | person | hendrick-yc-application-tips |
-| [conveo](entities/conveo.md) | Conveo | company | hendrick-yc-application-tips |
 | [lassaad-gaiji](entities/lassaad-gaiji.md) | Lassaad Gaiji | person | gaiji-beyond-rag |
 
 ---
@@ -73,7 +76,7 @@ _Last updated: 2026-05-14 — 8 sources, 46 pages_
 
 | Slug | Title | Sources |
 |---|---|---|
-| [agentic-systems](topics/agentic-systems.md) | Agentic Systems: Applications and Implications | agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, speakeasy-agent-framework-comparison |
+| [agentic-systems](topics/agentic-systems.md) | Agentic Systems: Applications and Implications | agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, speakeasy-agent-framework-comparison, foundation-capital-context-graphs |
 | [ai-forecasting](topics/ai-forecasting.md) | AI Forecasting: Methodology and Credibility | ai-2027 |
 
 ---
@@ -91,5 +94,6 @@ Concepts not yet with their own page but mentioned in the wiki:
 - `prompt-caching` — mentioned in garrytan-thin-harness-fat-skills and implemented in Claude Code; needs concept page when more sources arrive
 - `steve-yegge` — quoted in garrytan-thin-harness-fat-skills for 1000x productivity claim; minor reference, no entity page yet
 - `claude-code` — Anthropic product, central to garrytan-thin-harness-fat-skills; consider product entity page when more sources arrive
+- `agent-observability` — category named in foundation-capital-context-graphs (Arize "Datadog for agents"); promote to concept page when a second source describes it
+- `glue-functions` — RevOps / DevOps / SecOps as cross-system glue roles where decision context is uncaptured (foundation-capital-context-graphs); promote to concept page if recurring
 
-_Use this list to prioritize new concept pages during the next ingest._

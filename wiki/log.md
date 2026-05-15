@@ -45,7 +45,8 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 ## [2026-05-12] ingest | Tips from Hendrick: How to Nail Your YC Application
 
 - Source page: [[sources/hendrick-yc-application-tips]]
-- Pages created: [[concepts/yc-application]], [[concepts/founder-traction]], [[entities/hendrick]], [[entities/conveo]]
+- Pages created: [[concepts/yc-application]], [[concepts/founder-traction]]
+- Entity pages not created (curator decision): Hendrick, Conveo — referenced as plain text via [[sources/hendrick-yc-application-tips]]
 - Pages updated: [[entities/y-combinator]] (added YC application section), [[wiki/index.md]]
 
 ## [2026-05-14] ingest | Beyond RAG: How to Make Your AI Actually Know Things
@@ -60,3 +61,9 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Pages created: [[sources/karpathy-llm-wiki-gist]]
 - Pages updated: [[concepts/llm-wiki]] (application domains, schema layer, CLI tools/qmd, tips and tricks, Memex quote), [[concepts/rag-vs-wiki]] (primary source citation, Karpathy quote, named RAG examples), [[entities/andrej-karpathy]] (primary vs. secondhand source distinction, new quote), [[wiki/index.md]]
 - Note: this is Karpathy's own gist — the canonical first-person description of the pattern. Supersedes [[llm-knowledge-bases-explained]] as authoritative reference but both are retained.
+
+## [2026-05-15] ingest | AI's trillion-dollar opportunity: Context graphs
+
+- Source page: [[sources/foundation-capital-context-graphs]]
+- Pages created: [[sources/foundation-capital-context-graphs]], [[concepts/context-graph]], [[concepts/decision-trace]], [[concepts/systems-of-record]], [[concepts/systems-of-agents]]
+- Pages updated: [[concepts/agentic-ai]] (commercial implication: context graph as moat), [[topics/agentic-systems]] (fifth domain: systems of agents and context graphs; new open questions), [[entities/y-combinator]] (stripped broken references), [[wiki/index.md]] (counts, sources/concepts/entities tables, coverage map with "deliberately not given their own page" subsection)
