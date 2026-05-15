@@ -14,7 +14,7 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 
 ## [2026-04-16] ingest | Andrej Karpathy's LLM Knowledge Bases explained
 
-- Source page: [[sources/karpathy-llm-knowledge-bases]]
+- Source page: [[llm-knowledge-bases-explained]]
 - Pages created: [[concepts/llm-wiki]], [[concepts/rag-vs-wiki]], [[entities/andrej-karpathy]]
 - Pages updated: none (first ingest)
 
@@ -59,4 +59,4 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Source page: [[sources/karpathy-llm-wiki-gist]]
 - Pages created: [[sources/karpathy-llm-wiki-gist]]
 - Pages updated: [[concepts/llm-wiki]] (application domains, schema layer, CLI tools/qmd, tips and tricks, Memex quote), [[concepts/rag-vs-wiki]] (primary source citation, Karpathy quote, named RAG examples), [[entities/andrej-karpathy]] (primary vs. secondhand source distinction, new quote), [[wiki/index.md]]
-- Note: this is Karpathy's own gist — the canonical first-person description of the pattern. Supersedes [[sources/karpathy-llm-knowledge-bases]] as authoritative reference but both are retained.
+- Note: this is Karpathy's own gist — the canonical first-person description of the pattern. Supersedes [[llm-knowledge-bases-explained]] as authoritative reference but both are retained.

@@ -62,7 +62,7 @@ Post-event NPS surveys → the model diarizes **mediocre** responses (not the ou
 
 The INGEST operation in this vault is a form of diarization: reading a raw article and writing a structured wiki page that distills its claims, evidence, implications, and contradictions. The "Says vs. Actually Building" gap detection is analogous to flagging contradictions between sources.
 
-> **Note:** The LLM Wiki concept (from [[sources/karpathy-llm-knowledge-bases|Karpathy]]) independently arrives at the same insight: LLMs can synthesize across documents in a way RAG cannot. Diarization is Tan's name for this capability in an agent context.
+> **Note:** The LLM Wiki concept (from [[llm-knowledge-bases-explained|Karpathy]]) independently arrives at the same insight: LLMs can synthesize across documents in a way RAG cannot. Diarization is Tan's name for this capability in an agent context.
 
 ## Diarization vs. RAG
 

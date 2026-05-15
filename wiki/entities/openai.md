@@ -16,7 +16,7 @@ AI research lab and company. Founded 2015. Largest AI company by public visibili
 
 Appears across multiple sources:
 
-- **[[sources/karpathy-llm-knowledge-bases]]**: [[entities/andrej-karpathy|Karpathy]] is a founding researcher at OpenAI. GPT-4 and Claude cited as the capable LLMs that enable knowledge base workflows.
+- **[[llm-knowledge-bases-explained]]**: [[entities/andrej-karpathy|Karpathy]] is a founding researcher at OpenAI. GPT-4 and Claude cited as the capable LLMs that enable knowledge base workflows.
 - **[[sources/ai-2027]]**: Written by ex-OpenAI researchers. Sam Altman (CEO) quoted predicting superintelligence "in the true sense of the word" soon.
 - **[[sources/agentic-supply-chain-deloitte]]**: OpenAI's GPT models implicitly underlie many of the agentic AI deployments described.
 

@@ -23,7 +23,7 @@ AI researcher and educator. One of the most prominent practitioners in the field
 Karpathy publicly described a workflow shift from writing code to building LLM-maintained knowledge bases — the origin point of the [[concepts/llm-wiki|LLM Wiki]] pattern this vault implements. Two sources cover this:
 
 - [[sources/karpathy-llm-wiki-gist]] — his own gist (primary source, 2026-04-01); the canonical description of the pattern
-- [[sources/karpathy-llm-knowledge-bases]] — secondhand explanation by Mehul Gupta (2026-04-12)
+- [[llm-knowledge-bases-explained]] — secondhand explanation by Mehul Gupta (2026-04-12)
 
 Key quote from [[sources/karpathy-llm-wiki-gist]]:
 > "In practice, I have the LLM agent open on one side and Obsidian open on the other. The LLM makes edits based on our conversation, and I browse the results in real time — following links, checking the graph view, reading the updated pages. Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase."
@@ -39,5 +39,5 @@ Fine-tuning a model on the wiki to bake knowledge into model weights, eliminatin
 - [[concepts/llm-wiki]]
 - [[concepts/rag-vs-wiki]]
 - [[sources/karpathy-llm-wiki-gist]]
-- [[sources/karpathy-llm-knowledge-bases]]
+- [[llm-knowledge-bases-explained]]
 - [[entities/openai]]

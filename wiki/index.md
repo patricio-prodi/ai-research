@@ -11,7 +11,7 @@ _Last updated: 2026-05-14 — 8 sources, 46 pages_
 | Slug | Title | Published | Tags |
 |---|---|---|---|
 | [karpathy-llm-wiki-gist](sources/karpathy-llm-wiki-gist.md) | LLM Wiki (Karpathy's gist — primary source) | 2026-04-01 | knowledge-management, llm-workflow, obsidian, rag, wiki, architecture |
-| [karpathy-llm-knowledge-bases](sources/karpathy-llm-knowledge-bases.md) | Andrej Karpathy's LLM Knowledge Bases explained | 2026-04-12 | knowledge-management, llm-workflow, obsidian, rag, wiki |
+| [llm-knowledge-bases-explained](llm-knowledge-bases-explained.md) | Andrej Karpathy's LLM Knowledge Bases explained | 2026-04-12 | knowledge-management, llm-workflow, obsidian, rag, wiki |
 | [ai-2027](sources/ai-2027.md) | AI 2027 | 2025-11 | agi, forecasting, scenarios, superintelligence, ai-safety |
 | [agentic-supply-chain-deloitte](sources/agentic-supply-chain-deloitte.md) | Resilient by design: The agentic supply chain | 2026-03-30 | agentic-ai, supply-chain, manufacturing, enterprise-ai |
 | [garrytan-thin-harness-fat-skills](sources/garrytan-thin-harness-fat-skills.md) | Thin Harness, Fat Skills | 2026-04-11 | agent-architecture, skill-files, claude-code, productivity, llm-workflow |

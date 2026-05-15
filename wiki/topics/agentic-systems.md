@@ -22,7 +22,7 @@ The organizing principle: **don't insert agents into old workflows — redesign 
 
 ### 2. Personal: LLM wikis
 
-From [[sources/karpathy-llm-knowledge-bases]]: [[entities/andrej-karpathy|Karpathy]]'s knowledge base system. An LLM acts as compiler and librarian: reading raw sources, writing summaries, maintaining cross-references, flagging contradictions. The human reads the wiki; the LLM writes it.
+From [[llm-knowledge-bases-explained]]: [[entities/andrej-karpathy|Karpathy]]'s knowledge base system. An LLM acts as compiler and librarian: reading raw sources, writing summaries, maintaining cross-references, flagging contradictions. The human reads the wiki; the LLM writes it.
 
 Current state: proven at ~100-source scale without RAG infrastructure. The [[concepts/llm-wiki|LLM Wiki]] pattern this vault implements.
 
@@ -94,6 +94,6 @@ The question isn't whether to use agentic AI, but how to redesign workflows for 
 - [[concepts/llm-wiki]]
 - [[concepts/agi-timelines]]
 - [[sources/agentic-supply-chain-deloitte]]
-- [[sources/karpathy-llm-knowledge-bases]]
+- [[llm-knowledge-bases-explained]]
 - [[sources/garrytan-thin-harness-fat-skills]]
 - [[topics/ai-forecasting]]

@@ -16,7 +16,7 @@ key_concepts: [llm-wiki, rag-vs-wiki]
 
 ## Overview
 
-The primary source for the [[concepts/llm-wiki|LLM Wiki]] pattern. This is Karpathy's own gist — an "idea file" designed to be copy-pasted to an LLM agent so it can instantiate the pattern for you. Describes the full architecture, operations, and philosophy in first-person. More detailed and authoritative than [[sources/karpathy-llm-knowledge-bases]], which was a secondhand summary.
+The primary source for the [[concepts/llm-wiki|LLM Wiki]] pattern. This is Karpathy's own gist — an "idea file" designed to be copy-pasted to an LLM agent so it can instantiate the pattern for you. Describes the full architecture, operations, and philosophy in first-person. More detailed and authoritative than [[llm-knowledge-bases-explained]], which was a secondhand summary.
 
 The document is intentionally abstract — it communicates the pattern, not a specific implementation. Directory structure, schema conventions, page formats, and tooling are left to the user + LLM to co-design.
 
@@ -100,4 +100,4 @@ At scale, a search engine over wiki pages becomes useful. Karpathy recommends [q
 - [[concepts/llm-wiki]] — the full concept derived from this source
 - [[concepts/rag-vs-wiki]] — RAG vs. wiki comparison
 - [[entities/andrej-karpathy]] — author
-- [[sources/karpathy-llm-knowledge-bases]] — secondhand explanation of the same pattern
+- [[llm-knowledge-bases-explained]] — secondhand explanation of the same pattern
