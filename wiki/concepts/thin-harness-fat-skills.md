@@ -2,7 +2,7 @@
 type: concept
 title: "Thin Harness, Fat Skills"
 aliases: [thin harness, fat skills, harness architecture]
-sources: [garrytan-thin-harness-fat-skills]
+sources: [garrytan-thin-harness-fat-skills, garrytan-resolvers-routing-table]
 related_concepts: [skill-files, resolvers, latent-vs-deterministic, diarization, agentic-ai]
 related_entities: [garry-tan, y-combinator, anthropic]
 last_updated: 2026-04-16

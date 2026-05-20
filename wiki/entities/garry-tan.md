@@ -3,18 +3,19 @@ type: entity
 name: "Garry Tan"
 kind: person
 aliases: [garrytan]
-sources: [garrytan-thin-harness-fat-skills]
-related_concepts: [thin-harness-fat-skills, skill-files, resolvers, latent-vs-deterministic, diarization]
-last_updated: 2026-04-16
+sources: [garrytan-thin-harness-fat-skills, garrytan-resolvers-routing-table]
+related_concepts: [thin-harness-fat-skills, skill-files, resolvers, latent-vs-deterministic, diarization, context-rot]
+last_updated: 2026-05-18
 ---
 
 # Garry Tan
 
-President and CEO of [[entities/y-combinator|Y Combinator]]. Investor, engineer, and writer. Author of [[sources/garrytan-thin-harness-fat-skills|"Thin Harness, Fat Skills"]] (April 2026).
+President and CEO of [[entities/y-combinator|Y Combinator]]. Investor, engineer, and writer. Creator of [[entities/gbrain|GBrain]], an open-source personal AI brain system processing 200 inputs/day on 25,000 files.
 
 ## Relevance to this wiki
 
-- **[[sources/garrytan-thin-harness-fat-skills]]**: Primary source. Tan defines the "thin harness, fat skills" framework for AI agent architecture, based on his experience teaching AI coding productivity at YC and reviewing the leaked Claude Code source (March 2026).
+- **[[sources/garrytan-thin-harness-fat-skills]]**: Defines the "thin harness, fat skills" framework for AI agent architecture, based on his experience teaching AI coding productivity at YC and reviewing the leaked Claude Code source (March 2026).
+- **[[sources/garrytan-resolvers-routing-table]]**: Deep dive on resolvers as the governance layer of agent systems — drawing from his personal agent's failure modes and production fixes.
 
 ## Background
 
@@ -27,11 +28,15 @@ President and CEO of [[entities/y-combinator|Y Combinator]]. Investor, engineer,
 
 - The 100x productivity gap between AI agent users is architectural, not model-level.
 - Markdown skill files are a more perfect encapsulation of capability than rigid source code for AI-executable procedures.
+- Resolvers are the governance layer of agent systems — the most important and overlooked component.
 - The most valuable loop in 2026 knowledge work: retrieve → read → diarize → synthesize → survey → investigate → rewrite skill.
 - His own rule: "If I have to ask you for something twice, you failed."
 
 ## Related pages
 
 - [[entities/y-combinator]]
+- [[entities/gbrain]]
 - [[concepts/thin-harness-fat-skills]]
+- [[concepts/resolvers]]
 - [[sources/garrytan-thin-harness-fat-skills]]
+- [[sources/garrytan-resolvers-routing-table]]

@@ -1,13 +1,13 @@
 ---
 title: "Resolvers: The Routing Table for Intelligence"
-source: "https://x.com/garrytan/status/2044479509874020852"
+source: https://x.com/garrytan/status/2044479509874020852
 author:
   - "[[@garrytan]]"
 published: 2026-04-15
 created: 2026-04-16
-description: "In \"Thin Harness, Fat Skills\", I introduced five definitions for building agent systems that actually work. Skills got all the attention. Pe..."
+description:
 tags:
-  - inbox
+  - ingested
 ---
 ![Image](https://pbs.twimg.com/media/HF9v5r1bEAEhngG?format=jpg&name=large)
 
@@ -15,7 +15,7 @@ In "[Thin Harness, Fat Skills](https://x.com/garrytan/status/2042925773300908103
 
 But the one that got almost no attention is the one that matters most. Resolvers. And the reason they got ignored is the same reason they're so important: they're invisible when they work, and catastrophic when they don't.
 
-A resolver is a routing table for context. When task type X appears, load document Y first. That's it. One sentence. But that one sentence is the difference between an agent that compounds intelligence and an agent that slowly forgets what it knows.
+<mark style="background: #FFF3A3A6;">A resolver is a routing table for context. When task type X appears, load document Y first. </mark>That's it. One sentence. But that one sentence is the difference between an agent that compounds intelligence and an agent that slowly forgets what it knows.
 
 This is the story of how I learned that the hard way.
 
@@ -89,7 +89,7 @@ So I built resolver trigger evals. A test suite of 50 sample inputs with expecte
 
 Two failure modes. False negative: skill should fire but doesn't, because the trigger description is wrong or missing. False positive: wrong skill fires, because two triggers overlap. Both fixable by editing markdown. No code changes. The resolver is a document, and documents are cheap to fix.
 
-I told my Claw: "Make sure the resolver is tested and also there are proper eval LLM tests for all the prompts and skills that use the resolver." This isn't optional. If you can't prove the right skill fires for the right input, you don't have a system. You have a collection of skills and a prayer.
+<mark style="background: #FFF3A3A6;">I told my Claw: "Make sure the resolver is tested and also there are proper eval LLM tests for all the prompts and skills that use the resolver." This isn't optional. If you can't prove the right skill fires for the right input, you don't have a system. You have a collection of skills and a prayer.</mark>
 
 ## The meta-skill
 
@@ -117,7 +117,7 @@ Day 30, three new skills exist that nobody added to the resolver. They were buil
 
 Day 60, two trigger descriptions don't match how users actually phrase things. The skill handles "track this flight" but users say "is my flight delayed?" The description says one thing. The user says another. The skill doesn't fire.
 
-Day 90, the resolver is a historical document. An artifact of what the system \*used to\* be able to do. Not what it can do now.
+Day 90, the resolver is a historical document. An artifact of what the system **used to** be able to do. Not what it can do now.
 
 I noticed the system was drifting. Skills were being invoked by direct instruction — "read skills/flight-tracker/SKILL.md" — instead of through the resolver, because the resolver didn't have the right triggers. The system worked because I knew which skill to call. That's not a system. That's a person with a filing cabinet.
 
@@ -151,7 +151,7 @@ The same architecture, at every layer. That's what makes it scale from 5 skills 
 
 Let me pull this together.
 
-A resolver is 200 lines of markdown that replaced 20,000 lines of crammed context. When it's missing, skills invent their own filing logic and everything slowly degrades. When it's present but untested, capabilities go dark — you have a surgeon the hospital can't find. When it's tested but static, it rots within 90 days. When it's tested and self-healing, the system compounds.
+<mark style="background: #FFF3A3A6;">A resolver is 200 lines of markdown that replaced 20,000 lines of crammed context. When it's missing, skills invent their own filing logic and everything slowly degrades. When it's present but untested, capabilities go dark — you have a surgeon the hospital can't find. When it's tested but static, it rots within 90 days. When it's tested and self-healing, the system compounds.</mark>
 
 The pattern:
 

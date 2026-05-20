@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Last updated: 2026-05-15 — 10 sources, 52 pages_
+_Last updated: 2026-05-18 — 11 sources, 56 pages_
 
 > The index is the LLM's navigation map. Read this first when answering queries or ingesting new sources.
 
@@ -20,6 +20,7 @@ _Last updated: 2026-05-15 — 10 sources, 52 pages_
 | [gaiji-beyond-rag](sources/gaiji-beyond-rag.md) | Beyond RAG: How to Make Your AI Actually Know Things | 2026-04-24 | rag, knowledge-extraction, agent-architecture, mcp, database |
 | [foundation-capital-context-graphs](sources/foundation-capital-context-graphs.md) | AI's trillion-dollar opportunity: Context graphs | 2025-12-22 | enterprise-ai, systems-of-record, context-graph, agentic-ai, vc-thesis, decision-trace |
 | [vijaykumar-skill-md-deep-dive](sources/vijaykumar-skill-md-deep-dive.md) | Deep Dive SKILL.md (Part 1/2) | 2026-03-17 | skill-files, agent-architecture, claude-code, progressive-disclosure, agent-skills-standard |
+| [garrytan-resolvers-routing-table](sources/garrytan-resolvers-routing-table.md) | Resolvers: The Routing Table for Intelligence | 2026-04-15 | agent-architecture, resolvers, context-management, skill-files, claude-code, llm-workflow |
 
 ---
 
@@ -47,6 +48,7 @@ _Last updated: 2026-05-15 — 10 sources, 52 pages_
 | [systems-of-record](concepts/systems-of-record.md) | Systems of Record | Enterprise software pattern (Salesforce, Workday, SAP) that owns canonical object data; debated under the agent transition |
 | [systems-of-agents](concepts/systems-of-agents.md) | Systems of Agents | Proposed new enterprise category: platforms that sit in the orchestration path, persist decision traces, and accumulate context graphs |
 | [progressive-disclosure](concepts/progressive-disclosure.md) | Progressive Disclosure | 3-level loading mechanism in Agent Skills: metadata only → full body → deep references; makes hundreds of installed skills tractable |
+| [context-rot](concepts/context-rot.md) | Context Rot | Gradual decay of a resolver as the system evolves but the routing table does not; failure mode at Day 30–90 in production agent systems |
 
 ---
 
@@ -72,6 +74,7 @@ _Last updated: 2026-05-15 — 10 sources, 52 pages_
 | [openai-agents-sdk](entities/openai-agents-sdk.md) | OpenAI Agents SDK | product | speakeasy-agent-framework-comparison |
 | [lassaad-gaiji](entities/lassaad-gaiji.md) | Lassaad Gaiji | person | gaiji-beyond-rag |
 | [ab-vijay-kumar](entities/ab-vijay-kumar.md) | A B Vijay Kumar | person | vijaykumar-skill-md-deep-dive |
+| [gbrain](entities/gbrain.md) | GBrain | product | garrytan-resolvers-routing-table, garrytan-thin-harness-fat-skills |
 
 ---
 
@@ -96,8 +99,11 @@ Concepts not yet with their own page but mentioned in the wiki:
 - `inference-scaling` — mentioned in ai-forecasting topic; needs concept page when more sources arrive
 - `prompt-caching` — mentioned in garrytan-thin-harness-fat-skills and implemented in Claude Code; needs concept page when more sources arrive
 - `steve-yegge` — quoted in garrytan-thin-harness-fat-skills for 1000x productivity claim; minor reference, no entity page yet
-- `claude-code` — Anthropic product; central to garrytan-thin-harness-fat-skills and vijaykumar-skill-md-deep-dive. Now referenced in two sources — promote to entity page next ingest.
+- `claude-code` — Anthropic product; central to garrytan-thin-harness-fat-skills, vijaykumar-skill-md-deep-dive, and garrytan-resolvers-routing-table. Now referenced in three sources — promote to entity page next ingest.
 - `agentskills-io` — the open standard hub for Agent Skills (agentskills.io); referenced in vijaykumar-skill-md-deep-dive. Promote to entity page when more sources arrive.
+- `autodream` — Claude Code's idle-time memory consolidation system; mentioned in garrytan-resolvers-routing-table as a primitive self-healing resolver. Promote to concept page if described in more depth elsewhere.
+- `trigger-evals` — sub-pattern of resolver governance (sample-input test suite for routing); covered in resolvers.md but could get its own page if sourced more broadly.
+- `will-manidis` — author of "No New Deal for OpenAI" (policy analysis); mentioned briefly as the misfiling case study. No entity page warranted yet.
 - `agent-observability` — category named in foundation-capital-context-graphs (Arize "Datadog for agents"); promote to concept page when a second source describes it
 - `glue-functions` — RevOps / DevOps / SecOps as cross-system glue roles where decision context is uncaptured (foundation-capital-context-graphs); promote to concept page if recurring
 

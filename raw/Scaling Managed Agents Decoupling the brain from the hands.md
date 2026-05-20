@@ -1,10 +1,11 @@
 ---
 title: "Scaling Managed Agents: Decoupling the brain from the hands"
-source: "https://www.anthropic.com/engineering/managed-agents"
+source: https://www.anthropic.com/engineering/managed-agents
 author:
+  - Antropic
 published:
 created: 2026-04-16
-description: "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems."
+description: Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.
 tags:
   - inbox
 ---

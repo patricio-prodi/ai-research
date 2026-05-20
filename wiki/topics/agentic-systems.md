@@ -1,9 +1,9 @@
 ---
 type: topic
 title: "Agentic Systems: Applications and Implications"
-sources: [agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, garrytan-thin-harness-fat-skills, foundation-capital-context-graphs]
-key_concepts: [agentic-ai, llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic, diarization, context-graph, decision-trace, systems-of-agents, systems-of-record]
-last_updated: 2026-05-15
+sources: [agentic-supply-chain-deloitte, karpathy-llm-knowledge-bases, ai-2027, garrytan-thin-harness-fat-skills, garrytan-resolvers-routing-table, foundation-capital-context-graphs]
+key_concepts: [agentic-ai, llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, resolvers, context-rot, latent-vs-deterministic, diarization, context-graph, decision-trace, systems-of-agents, systems-of-record]
+last_updated: 2026-05-18
 ---
 
 # Agentic Systems: Applications and Implications
@@ -36,7 +36,23 @@ Key design distinctions: [[concepts/latent-vs-deterministic|latent vs. determini
 
 The YC Startup School case: 6,000 founders, /enrich-founder runs nightly, /match-* skills handle three distinct matching strategies, /improve rewrites its own rules from NPS surveys. 12% "OK" ratings → 4% after one learning cycle.
 
-### 4. Implementation: Agent Frameworks
+### 4. Governance: Resolver architecture
+
+From [[sources/garrytan-resolvers-routing-table]]: Tan's follow-up to the thin harness article focuses on resolvers as the **governance layer** of agent systems — the most important and overlooked component.
+
+The core failure mode: as systems grow to 40+ skills, individual skills develop their own hardcoded filing logic. 10 of 13 brain-writing skills in Tan's system had hardcoded default paths; only 3 consulted the shared resolver. The result is silent drift — not dramatic failures but slow degradation as information goes to the wrong place.
+
+The resolver pattern at scale requires four practices:
+- **Every skill reads the resolver** before writing anything — enforced via a two-line mandate in each skill
+- **Trigger evals**: a suite of 50 sample inputs with expected skill outputs (catches both false negatives and false positives in routing)
+- **check-resolvable**: a meta-skill that walks the full chain weekly and finds unreachable skills (first run found 6 of 40+ dark)
+- **Self-healing**: an RLM loop that rewrites the resolver based on observed task dispatch patterns (forward-looking)
+
+The organizational metaphor crystallizes the pattern: skills are employees, the resolver is the org chart, filing rules are internal process, trigger evals are performance reviews. Most agent systems are built with no management layer — "just a pile of talented employees and a vague hope they'll coordinate."
+
+[[concepts/context-rot]] is the long-term failure mode: a static resolver is a historical document within 90 days as sub-agents spawn new skills that nobody registers.
+
+### 6. Implementation: Agent Frameworks
 
 From [[sources/speakeasy-agent-framework-comparison]]: The software ecosystem for building agentic systems has rapidly matured. The choice of [[concepts/agent-framework|agent framework]] dictates the architecture:
 
@@ -46,7 +62,7 @@ From [[sources/speakeasy-agent-framework-comparison]]: The software ecosystem fo
 
 The selection of a framework requires matching the organization's technical language (Python vs. TypeScript) and the orchestration complexity of the agents being built.
 
-### 5. Commercial: Systems of Agents and the Context Graph
+### 7. Commercial: Systems of Agents and the Context Graph
 
 From [[sources/foundation-capital-context-graphs]]: Foundation Capital argues that the most valuable byproduct of agentic AI in the enterprise is not the labor automation but the **[[concepts/context-graph|context graph]]** — a queryable record of [[concepts/decision-trace|decision traces]] (inputs, policies, exceptions, approvers, rationale) accumulated by agents sitting in the orchestration path at commit time.
 
@@ -107,6 +123,8 @@ The question isn't whether to use agentic AI, but how to redesign workflows for 
 - [[concepts/agentic-ai]]
 - [[concepts/thin-harness-fat-skills]]
 - [[concepts/skill-files]]
+- [[concepts/resolvers]]
+- [[concepts/context-rot]]
 - [[concepts/latent-vs-deterministic]]
 - [[concepts/diarization]]
 - [[concepts/llm-wiki]]
@@ -115,5 +133,6 @@ The question isn't whether to use agentic AI, but how to redesign workflows for 
 - [[sources/agentic-supply-chain-deloitte]]
 - [[llm-knowledge-bases-explained]]
 - [[sources/garrytan-thin-harness-fat-skills]]
+- [[sources/garrytan-resolvers-routing-table]]
 - [[sources/foundation-capital-context-graphs]]
 - [[topics/ai-forecasting]]

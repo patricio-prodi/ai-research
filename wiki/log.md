@@ -73,3 +73,9 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Source page: [[sources/foundation-capital-context-graphs]]
 - Pages created: [[sources/foundation-capital-context-graphs]], [[concepts/context-graph]], [[concepts/decision-trace]], [[concepts/systems-of-record]], [[concepts/systems-of-agents]]
 - Pages updated: [[concepts/agentic-ai]] (commercial implication: context graph as moat), [[topics/agentic-systems]] (fifth domain: systems of agents and context graphs; new open questions), [[entities/y-combinator]] (stripped broken references), [[wiki/index.md]] (counts, sources/concepts/entities tables, coverage map with "deliberately not given their own page" subsection)
+
+## [2026-05-18] ingest | Resolvers: The Routing Table for Intelligence
+
+- Source page: [[sources/garrytan-resolvers-routing-table]]
+- Pages created: [[sources/garrytan-resolvers-routing-table]], [[concepts/context-rot]], [[entities/gbrain]]
+- Pages updated: [[concepts/resolvers]] (major expansion: fractal resolvers, trigger evals, check-resolvable, self-healing, governance mandates, management metaphor), [[entities/garry-tan]] (added second source, gbrain reference, updated key positions), [[concepts/thin-harness-fat-skills]] (added second source), [[topics/agentic-systems]] (added §4 Governance: Resolver architecture; renumbered §4→6, §5→7), [[wiki/index.md]] (counts 11 sources 56 pages, new entries in sources/concepts/entities tables, coverage map additions)
