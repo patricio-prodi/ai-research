@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Last updated: 2026-05-18 — 11 sources, 56 pages_
+_Last updated: 2026-05-20 — 13 sources, 65 pages_
 
 > The index is the LLM's navigation map. Read this first when answering queries or ingesting new sources.
 
@@ -21,6 +21,8 @@ _Last updated: 2026-05-18 — 11 sources, 56 pages_
 | [foundation-capital-context-graphs](sources/foundation-capital-context-graphs.md) | AI's trillion-dollar opportunity: Context graphs | 2025-12-22 | enterprise-ai, systems-of-record, context-graph, agentic-ai, vc-thesis, decision-trace |
 | [vijaykumar-skill-md-deep-dive](sources/vijaykumar-skill-md-deep-dive.md) | Deep Dive SKILL.md (Part 1/2) | 2026-03-17 | skill-files, agent-architecture, claude-code, progressive-disclosure, agent-skills-standard |
 | [garrytan-resolvers-routing-table](sources/garrytan-resolvers-routing-table.md) | Resolvers: The Routing Table for Intelligence | 2026-04-15 | agent-architecture, resolvers, context-management, skill-files, claude-code, llm-workflow |
+| [google-a2ui-introduction](sources/google-a2ui-introduction.md) | Introducing A2UI: An open project for agent-driven interfaces | 2025-12-15 | generative-ui, agent-architecture, multi-agent, a2ui, a2a-protocol, flutter, open-source |
+| [google-a2ui-v09](sources/google-a2ui-v09.md) | A2UI v0.9: The New Standard for Portable, Framework-Agnostic Generative UI | 2026-04-17 | generative-ui, a2ui, agent-architecture, a2a-protocol, flutter, streaming, open-source |
 
 ---
 
@@ -49,6 +51,8 @@ _Last updated: 2026-05-18 — 11 sources, 56 pages_
 | [systems-of-agents](concepts/systems-of-agents.md) | Systems of Agents | Proposed new enterprise category: platforms that sit in the orchestration path, persist decision traces, and accumulate context graphs |
 | [progressive-disclosure](concepts/progressive-disclosure.md) | Progressive Disclosure | 3-level loading mechanism in Agent Skills: metadata only → full body → deep references; makes hundreds of installed skills tractable |
 | [context-rot](concepts/context-rot.md) | Context Rot | Gradual decay of a resolver as the system evolves but the routing table does not; failure mode at Day 30–90 in production agent systems |
+| [generative-ui](concepts/generative-ui.md) | Generative UI | Agents composing contextually relevant native UIs at runtime via declarative JSON; safe across trust boundaries |
+| [a2a-protocol](concepts/a2a-protocol.md) | Agent-to-Agent Protocol (A2A) | Open inter-agent communication protocol for multi-org agent meshes; donated by Google to Linux Foundation |
 
 ---
 
@@ -75,6 +79,9 @@ _Last updated: 2026-05-18 — 11 sources, 56 pages_
 | [lassaad-gaiji](entities/lassaad-gaiji.md) | Lassaad Gaiji | person | gaiji-beyond-rag |
 | [ab-vijay-kumar](entities/ab-vijay-kumar.md) | A B Vijay Kumar | person | vijaykumar-skill-md-deep-dive |
 | [gbrain](entities/gbrain.md) | GBrain | product | garrytan-resolvers-routing-table, garrytan-thin-harness-fat-skills |
+| [google](entities/google.md) | Google | company | google-a2ui-introduction |
+| [a2ui](entities/a2ui.md) | A2UI | product | google-a2ui-introduction |
+| [copilotkit](entities/copilotkit.md) | CopilotKit | company | google-a2ui-introduction |
 
 ---
 
@@ -106,4 +113,10 @@ Concepts not yet with their own page but mentioned in the wiki:
 - `will-manidis` — author of "No New Deal for OpenAI" (policy analysis); mentioned briefly as the misfiling case study. No entity page warranted yet.
 - `agent-observability` — category named in foundation-capital-context-graphs (Arize "Datadog for agents"); promote to concept page when a second source describes it
 - `glue-functions` — RevOps / DevOps / SecOps as cross-system glue roles where decision context is uncaptured (foundation-capital-context-graphs); promote to concept page if recurring
+- `opal` — Google's AI mini-app builder (google-a2ui-introduction); hundreds of thousands of users; early A2UI adopter. Promote to entity page when a dedicated source arrives.
+- `flutter` — Google's multi-platform UI framework; GenUI SDK uses A2UI as its declaration format (google-a2ui-introduction). Promote to entity page when more sources reference it.
+- `ag-ui-protocol` — CopilotKit's agent-user interaction protocol; pipes layer that uses A2UI for rendering. Currently covered in copilotkit entity page; promote to concept page if sourced more deeply.
+- `ag2` — AutoGen successor; built native `A2UIAgent` integration (google-a2ui-v09). Promote to entity page when more sources arrive.
+- `oracle` — shipped Agent Spec + AG UI + A2UI enterprise stack (google-a2ui-v09). Promote to entity page if recurring.
+- `resilient-streaming` — incremental parse+heal of LLM JSON output; production-critical for generative UI. Covered in generative-ui concept page; promote to dedicated concept if sourced more broadly.
 

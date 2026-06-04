@@ -2,10 +2,10 @@
 type: concept
 title: "Agentic AI"
 aliases: [ai agents, autonomous agents, agentic systems]
-sources: [agentic-supply-chain-deloitte, ai-2027, garrytan-thin-harness-fat-skills, foundation-capital-context-graphs]
+sources: [agentic-supply-chain-deloitte, ai-2027, garrytan-thin-harness-fat-skills, foundation-capital-context-graphs, google-a2ui-introduction]
 related_concepts: [llm-wiki, agi-timelines, thin-harness-fat-skills, skill-files, latent-vs-deterministic, context-graph, decision-trace, systems-of-agents, systems-of-record]
-related_entities: [openai, anthropic, garry-tan]
-last_updated: 2026-05-15
+related_entities: [openai, anthropic, garry-tan, google]
+last_updated: 2026-05-20
 ---
 
 # Agentic AI
@@ -95,13 +95,26 @@ Foundation Capital argues this creates a new commercial category — **[[concept
 
 This reframes the business case for agentic AI: not just cost reduction via automation, but **capture of a previously uncaptured category of business truth**.
 
+## The multi-agent mesh and the UI trust boundary (Google, 2025)
+
+From [[sources/google-a2ui-introduction|Google A2UI (2025)]]: as the agent ecosystem matures, agents from different organizations collaborate in a **multi-agent mesh** — agents from Google, Cisco, IBM, SAP, Salesforce operating together. The [[concepts/a2a-protocol|A2A Protocol]] (donated to Linux Foundation) enables this cross-organizational agent communication.
+
+This creates a new **UI trust boundary problem**: a remote agent doing the work cannot directly manipulate the host application's view layer (DOM). It must send messages. Passing executable HTML/JS from an untrusted remote agent is a security risk; iframes are heavy and visually disjointed.
+
+[[concepts/generative-ui|A2UI]] is Google's answer: a declarative JSON format that is "safe like data, but expressive like code." Agents describe UI using a pre-approved component catalog; the client renders with its own native widgets. This means the UI always inherits the host app's branding and accessibility, and the orchestrator agent can read and reason about the lightweight JSON payload from subagents.
+
+The multi-agent mesh architecture therefore demands not just inter-agent communication protocols but also a **safe inter-agent UI layer** — a new category that didn't exist when all agents were local.
+
 ## Related pages
 
 - [[concepts/llm-wiki]] — a specific agentic AI application (LLM as wiki maintainer)
 - [[concepts/agi-timelines]] — how current agentic AI relates to AGI forecasts
 - [[concepts/thin-harness-fat-skills]] — the architectural design framework
 - [[concepts/context-graph]], [[concepts/decision-trace]], [[concepts/systems-of-agents]], [[concepts/systems-of-record]] — the commercial/structural framing
+- [[concepts/generative-ui]] — the UI layer for multi-agent mesh systems
+- [[concepts/a2a-protocol]] — inter-agent communication protocol
 - [[topics/agentic-systems]] — synthesis across agentic AI applications
 - [[entities/openai]], [[entities/anthropic]] — labs driving agentic AI development
 - [[entities/garry-tan]] — architect of the thin harness framework
+- [[entities/google]] — originator of A2UI and A2A Protocol
 - Foundation Capital — VC thesis on context graphs (no dedicated entity page)

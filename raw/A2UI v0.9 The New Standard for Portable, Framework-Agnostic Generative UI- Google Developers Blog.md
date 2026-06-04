@@ -7,10 +7,8 @@ published: 2026-04-17
 created: 2026-05-18
 description: "Discover A2UI v0.9, the framework-agnostic standard for Generative UI. Learn how the new Agent SDK, shared web-core library, and cross-platform renderers allow AI agents to drive your existing design system on any device with low-latency streaming."
 tags:
-  - "inbox"
+  - "ingested"
 ---
-developers.googleblog.com uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic. [Learn more](https://policies.google.com/technologies/cookies?hl=en)
-
 ## A2UI v0.9: The New Standard for Portable, Framework-Agnostic Generative UI
 
 APRIL 17, 2026

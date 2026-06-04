@@ -7,7 +7,7 @@ published: 2025-12-15
 created: 2026-05-18
 description: "A2UI is an open-source project for agent-driven, cross-platform generative UI. It uses a secure, declarative format for agents to safely render UIs."
 tags:
-  - "inbox"
+  - "ingested"
 ---
 # Introducing A2UI: An open project for agent-driven interfaces
 

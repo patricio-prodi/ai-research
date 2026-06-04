@@ -79,3 +79,15 @@ Operations: `ingest`, `query`, `lint`, `update`, `init`
 - Source page: [[sources/garrytan-resolvers-routing-table]]
 - Pages created: [[sources/garrytan-resolvers-routing-table]], [[concepts/context-rot]], [[entities/gbrain]]
 - Pages updated: [[concepts/resolvers]] (major expansion: fractal resolvers, trigger evals, check-resolvable, self-healing, governance mandates, management metaphor), [[entities/garry-tan]] (added second source, gbrain reference, updated key positions), [[concepts/thin-harness-fat-skills]] (added second source), [[topics/agentic-systems]] (added §4 Governance: Resolver architecture; renumbered §4→6, §5→7), [[wiki/index.md]] (counts 11 sources 56 pages, new entries in sources/concepts/entities tables, coverage map additions)
+
+## [2026-05-20] ingest | A2UI v0.9: The New Standard for Portable, Framework-Agnostic Generative UI
+
+- Source page: [[sources/google-a2ui-v09]]
+- Pages created: [[sources/google-a2ui-v09]]
+- Pages updated: [[entities/a2ui]] (v0.9 status, Agent SDK features, ecosystem table, new production examples, updated renderer list), [[concepts/generative-ui]] (added §Bring your own design system, §Resilient streaming, §Ecosystem, expanded production evidence; v0.9 source added), [[concepts/a2a-protocol]] (A2A 1.0 launched; Oracle/AG2 adoption noted; v0.9 source added), [[concepts/mcp-server]] (added A2UI-over-MCP transport note, roadmap signal), [[entities/vercel-ai-sdk]] (added json-renderer generative UI signal), [[wiki/index.md]] (counts 13 sources 65 pages; new source row; coverage map: ag2, oracle, resilient-streaming)
+
+## [2026-05-20] ingest | Introducing A2UI: An open project for agent-driven interfaces
+
+- Source page: [[sources/google-a2ui-introduction]]
+- Pages created: [[sources/google-a2ui-introduction]], [[concepts/generative-ui]], [[concepts/a2a-protocol]], [[entities/google]], [[entities/a2ui]], [[entities/copilotkit]]
+- Pages updated: [[concepts/agentic-ai]] (added multi-agent mesh UI trust boundary section; linked generative-ui and a2a-protocol; added google to related_entities), [[concepts/mcp-server]] (added MCP Apps comparison section; contrast with A2UI native-first approach), [[wiki/index.md]] (counts 12 sources 64 pages; new rows in all four tables; coverage map additions for opal, flutter, ag-ui-protocol)
